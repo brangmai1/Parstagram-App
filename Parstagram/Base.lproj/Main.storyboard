@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parstagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDM-0f-HSH">
-                                <rect key="frame" x="129" y="128" width="156" height="39"/>
+                                <rect key="frame" x="127" y="159" width="156" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.014042434229068092" green="0.52388261580472784" blue="0.044365139851144222" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISN-9N-2YS">
@@ -38,19 +38,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzb-2v-0hg">
-                                <rect key="frame" x="56" y="270" width="299" height="34"/>
+                                <rect key="frame" x="56" y="262" width="299" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R1j-bP-zj9">
-                                <rect key="frame" x="56" y="341" width="299" height="34"/>
+                                <rect key="frame" x="56" y="332" width="299" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgV-KT-fx3">
-                                <rect key="frame" x="287" y="408" width="68" height="31"/>
+                                <rect key="frame" x="272" y="383" width="87" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -60,7 +60,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXk-hX-hGP">
-                                <rect key="frame" x="55" y="414" width="75" height="31"/>
+                                <rect key="frame" x="56" y="383" width="96" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -69,6 +69,10 @@
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ESJ-cM-0Lj"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Parstagram" translatesAutoresizingMaskIntoConstraints="NO" id="BX6-hx-45L">
+                                <rect key="frame" x="153" y="79" width="104" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -81,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+            <point key="canvasLocation" x="130.40000000000001" y="115.59220389805098"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="P2D-eA-yXk">
@@ -112,21 +116,19 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uKH-3g-jZ1">
-                                            <rect key="frame" x="24" y="19" width="343" height="240"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="uKH-3g-jZ1" secondAttribute="height" multiplier="359:251" id="VnN-G2-7Oz"/>
-                                            </constraints>
+                                            <rect key="frame" x="16" y="0.0" width="343" height="240"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="eEJ-b1-MDv" secondAttribute="trailing" constant="8" id="1oL-MH-fij"/>
+                                        <constraint firstItem="eEJ-b1-MDv" firstAttribute="top" secondItem="uKH-3g-jZ1" secondAttribute="bottom" constant="27" id="79X-ww-SLv"/>
+                                        <constraint firstItem="HlC-ip-U35" firstAttribute="top" secondItem="uKH-3g-jZ1" secondAttribute="bottom" constant="27" id="E8w-AJ-VdE"/>
                                         <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="eEJ-b1-MDv" secondAttribute="bottom" constant="8" id="H7J-j7-YqT"/>
-                                        <constraint firstItem="uKH-3g-jZ1" firstAttribute="top" secondItem="2Ga-wb-fQZ" secondAttribute="topMargin" constant="8" id="Rkc-fk-0MQ"/>
+                                        <constraint firstItem="uKH-3g-jZ1" firstAttribute="leading" secondItem="2Ga-wb-fQZ" secondAttribute="leadingMargin" id="M9Y-ih-7Ly"/>
                                         <constraint firstItem="eEJ-b1-MDv" firstAttribute="leading" secondItem="HlC-ip-U35" secondAttribute="trailing" constant="8" id="VHO-g4-TBd"/>
-                                        <constraint firstItem="eEJ-b1-MDv" firstAttribute="top" secondItem="uKH-3g-jZ1" secondAttribute="bottom" constant="8" id="aNr-4R-lJN"/>
-                                        <constraint firstItem="uKH-3g-jZ1" firstAttribute="trailing" secondItem="2Ga-wb-fQZ" secondAttribute="trailingMargin" constant="8" id="gC4-fw-M7V"/>
-                                        <constraint firstItem="uKH-3g-jZ1" firstAttribute="leading" secondItem="2Ga-wb-fQZ" secondAttribute="leadingMargin" constant="8" id="l7x-qu-zoz"/>
-                                        <constraint firstItem="HlC-ip-U35" firstAttribute="top" secondItem="uKH-3g-jZ1" secondAttribute="bottom" constant="8" id="r9r-oG-AOs"/>
+                                        <constraint firstItem="uKH-3g-jZ1" firstAttribute="trailing" secondItem="2Ga-wb-fQZ" secondAttribute="trailingMargin" id="c3y-uJ-q7C"/>
+                                        <constraint firstItem="uKH-3g-jZ1" firstAttribute="top" secondItem="2Ga-wb-fQZ" secondAttribute="topMargin" constant="-11" id="ekY-KZ-2ek"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="HlC-ip-U35" secondAttribute="bottom" constant="19.5" id="hZI-VR-kft"/>
                                         <constraint firstItem="eEJ-b1-MDv" firstAttribute="baseline" secondItem="HlC-ip-U35" secondAttribute="firstBaseline" id="s6Z-Yp-Qla"/>
                                         <constraint firstItem="HlC-ip-U35" firstAttribute="centerY" secondItem="eEJ-b1-MDv" secondAttribute="centerY" id="vc1-0t-jqs"/>
                                         <constraint firstItem="HlC-ip-U35" firstAttribute="leading" secondItem="2Ga-wb-fQZ" secondAttribute="leading" constant="8" id="yQW-sX-0P4"/>
@@ -224,6 +226,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Parstagram" width="225" height="225"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
