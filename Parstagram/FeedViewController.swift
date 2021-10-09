@@ -12,7 +12,6 @@ import AlamofireImage
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var tableView: UITableView!
-    
     var posts = [PFObject]()
     
     override func viewDidLoad() {
@@ -37,13 +36,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.tableView.reloadData()
             }
         }
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell

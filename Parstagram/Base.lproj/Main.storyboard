@@ -104,34 +104,34 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlC-ip-U35">
-                                            <rect key="frame" x="8" y="267" width="36" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="8" y="289" width="38.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment Image" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEJ-b1-MDv">
-                                            <rect key="frame" x="52" y="267" width="299" height="20.5"/>
+                                            <rect key="frame" x="54.5" y="289" width="312.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uKH-3g-jZ1">
-                                            <rect key="frame" x="16" y="0.0" width="343" height="240"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uKH-3g-jZ1">
+                                            <rect key="frame" x="8" y="8" width="359" height="273"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="uKH-3g-jZ1" secondAttribute="height" multiplier="359:273" id="8ej-QP-3ek"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="eEJ-b1-MDv" secondAttribute="trailing" constant="8" id="1oL-MH-fij"/>
-                                        <constraint firstItem="eEJ-b1-MDv" firstAttribute="top" secondItem="uKH-3g-jZ1" secondAttribute="bottom" constant="27" id="79X-ww-SLv"/>
-                                        <constraint firstItem="HlC-ip-U35" firstAttribute="top" secondItem="uKH-3g-jZ1" secondAttribute="bottom" constant="27" id="E8w-AJ-VdE"/>
-                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="eEJ-b1-MDv" secondAttribute="bottom" constant="8" id="H7J-j7-YqT"/>
-                                        <constraint firstItem="uKH-3g-jZ1" firstAttribute="leading" secondItem="2Ga-wb-fQZ" secondAttribute="leadingMargin" id="M9Y-ih-7Ly"/>
-                                        <constraint firstItem="eEJ-b1-MDv" firstAttribute="leading" secondItem="HlC-ip-U35" secondAttribute="trailing" constant="8" id="VHO-g4-TBd"/>
-                                        <constraint firstItem="uKH-3g-jZ1" firstAttribute="trailing" secondItem="2Ga-wb-fQZ" secondAttribute="trailingMargin" id="c3y-uJ-q7C"/>
-                                        <constraint firstItem="uKH-3g-jZ1" firstAttribute="top" secondItem="2Ga-wb-fQZ" secondAttribute="topMargin" constant="-11" id="ekY-KZ-2ek"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="HlC-ip-U35" secondAttribute="bottom" constant="19.5" id="hZI-VR-kft"/>
-                                        <constraint firstItem="eEJ-b1-MDv" firstAttribute="baseline" secondItem="HlC-ip-U35" secondAttribute="firstBaseline" id="s6Z-Yp-Qla"/>
-                                        <constraint firstItem="HlC-ip-U35" firstAttribute="centerY" secondItem="eEJ-b1-MDv" secondAttribute="centerY" id="vc1-0t-jqs"/>
-                                        <constraint firstItem="HlC-ip-U35" firstAttribute="leading" secondItem="2Ga-wb-fQZ" secondAttribute="leading" constant="8" id="yQW-sX-0P4"/>
+                                        <constraint firstItem="eEJ-b1-MDv" firstAttribute="top" secondItem="uKH-3g-jZ1" secondAttribute="bottom" constant="8" id="0M3-E0-8Hb"/>
+                                        <constraint firstItem="uKH-3g-jZ1" firstAttribute="top" secondItem="2Ga-wb-fQZ" secondAttribute="top" constant="8" id="1jX-ac-XW9"/>
+                                        <constraint firstAttribute="trailing" secondItem="eEJ-b1-MDv" secondAttribute="trailing" constant="8" id="26s-dt-nsF"/>
+                                        <constraint firstItem="HlC-ip-U35" firstAttribute="leading" secondItem="2Ga-wb-fQZ" secondAttribute="leading" constant="8" id="4LZ-cQ-Mxh"/>
+                                        <constraint firstItem="eEJ-b1-MDv" firstAttribute="leading" secondItem="HlC-ip-U35" secondAttribute="trailing" constant="8" id="8u5-oV-A1F"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eEJ-b1-MDv" secondAttribute="bottom" constant="8" id="D9r-os-SKW"/>
+                                        <constraint firstAttribute="trailing" secondItem="uKH-3g-jZ1" secondAttribute="trailing" constant="8" id="EUj-YG-b0W"/>
+                                        <constraint firstItem="uKH-3g-jZ1" firstAttribute="leading" secondItem="2Ga-wb-fQZ" secondAttribute="leading" constant="8" id="kN6-oL-Znh"/>
+                                        <constraint firstItem="HlC-ip-U35" firstAttribute="top" secondItem="uKH-3g-jZ1" secondAttribute="bottom" constant="8" id="zb3-Ps-30E"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
