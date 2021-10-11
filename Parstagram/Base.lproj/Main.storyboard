@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,6 +143,11 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" id="oN2-3j-FEX">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="zQ9-6V-GKM">
+                            <connections>
+                                <action selector="onLogoutButton:" destination="PTR-q6-ZXq" id="lDu-Zl-3Xf"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="LIg-SW-Piq">
                             <connections>
                                 <segue destination="O2a-zN-jf7" kind="presentation" id="Sya-Mg-rgz"/>
@@ -209,7 +214,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Uhf-bP-5kh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QO1-BQ-t64" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="QO1-BQ-t64" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fbi-YA-gtn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
