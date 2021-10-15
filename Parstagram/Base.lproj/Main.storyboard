@@ -153,8 +153,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62w-5m-EEy">
-                                            <rect key="frame" x="73" y="8" width="83" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62w-5m-EEy">
+                                            <rect key="frame" x="73" y="8" width="138.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -174,6 +174,28 @@
                                     <outlet property="commentLabel" destination="62w-5m-EEy" id="taM-fz-eKY"/>
                                     <outlet property="nameLabel" destination="I12-A7-qqb" id="31d-eg-Dmz"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" rowHeight="60" id="QNB-uA-ejP">
+                                <rect key="frame" x="0.0" y="400" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QNB-uA-ejP" id="BLG-sw-IBi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment...." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owJ-KN-66M">
+                                            <rect key="frame" x="16" y="8" width="351" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="owJ-KN-66M" firstAttribute="leading" secondItem="BLG-sw-IBi" secondAttribute="leading" constant="16" id="0CJ-IW-eUR"/>
+                                        <constraint firstAttribute="bottom" secondItem="owJ-KN-66M" secondAttribute="bottom" constant="8" id="7bo-pQ-ulz"/>
+                                        <constraint firstItem="owJ-KN-66M" firstAttribute="top" secondItem="BLG-sw-IBi" secondAttribute="top" constant="8" id="nwe-k1-jpI"/>
+                                        <constraint firstAttribute="trailing" secondItem="owJ-KN-66M" secondAttribute="trailing" constant="8" id="qiO-4H-TNK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                     </tableView>

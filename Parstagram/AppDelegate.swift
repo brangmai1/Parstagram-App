@@ -10,6 +10,7 @@ import Parse
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+//    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -21,6 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             Parse.initialize(with: parseConfig)
         Thread.sleep(forTimeInterval: 2.0)
+        
+//        if PFUser.current() != nil {
+//            let main = UIStoryboard(name: "Main", bundle: nil)
+//            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+//            window?.rootViewController = feedNavigationController
+//        }
+        
+//        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+//        let delegate = windowScene.delegate as? SceneDelegate else { return }
+//        delegate.window?.rootViewController = loginViewController
         
         return true
     }
